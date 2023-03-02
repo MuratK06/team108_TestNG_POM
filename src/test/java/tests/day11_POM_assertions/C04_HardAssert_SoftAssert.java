@@ -18,7 +18,7 @@ public class C04_HardAssert_SoftAssert {
         Assert.assertNotEquals(6,6);
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void softAssertionTesti(){
         /*
             JUnit'deki Assert class'i TestNG'de de vardir

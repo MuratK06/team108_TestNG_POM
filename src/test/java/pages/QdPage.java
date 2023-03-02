@@ -7,25 +7,23 @@ import utulities.Driver;
 
 public class QdPage {
 
-    public QdPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public QdPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
 
     @FindBy(linkText = "Log in")
     public WebElement ilkLoginLinki;
 
-
-    @FindBy(id="login-email")
+    @FindBy(id = "login-email")
     public WebElement emailKutusu;
 
-    @FindBy(id="login-password")
+    @FindBy(id = "login-password")
     public WebElement passwordKutusu;
 
-    @FindBy(className = "btn red radius-5 mt-4 w-100")
+    @FindBy(xpath = "//button[text()='Login']")
     public WebElement loginButonu;
 
     @FindBy(xpath = "//a[text()='Instructor']")
     public WebElement basariliGirisElementi;
-
 }

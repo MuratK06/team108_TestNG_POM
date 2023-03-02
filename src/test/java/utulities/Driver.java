@@ -3,6 +3,9 @@ package utulities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
 
@@ -18,12 +21,32 @@ public class Driver {
 
     public static WebDriver driver;
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
-        WebDriverManager.chromedriver().setup();
+        String istenenBrowser = ConfigReader.getProperty("browser");
 
-        if (driver==null) {
-            driver = new ChromeDriver();
+        if (driver == null) {
+
+            switch (istenenBrowser) {
+
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
+                    break;
+                case "safari":
+                    WebDriverManager.safaridriver().setup();
+                    driver = new SafariDriver();
+                    break;
+                default:
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+
+            }
+
         }
 
         driver.manage().window().maximize();
@@ -33,22 +56,21 @@ public class Driver {
 
     }
 
-    public static void closeDriver(){
+    public static void closeDriver() {
 
-        if (driver != null){
+        if (driver != null) {
             driver.close();
-            driver=null;
+            driver = null;
         }
 
     }
 
-    public static void quitDriver(){
+    public static void quitDriver() {
 
-        if (driver != null){
+        if (driver != null) {
             driver.quit();
-            driver=null;
+            driver = null;
         }
 
     }
-
 }

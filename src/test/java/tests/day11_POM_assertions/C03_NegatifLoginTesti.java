@@ -7,8 +7,7 @@ import utulities.ConfigReader;
 import utulities.Driver;
 
 public class C03_NegatifLoginTesti {
-
-    // qd anasayfaya gidin
+// qd anasayfaya gidin
     // 3 test method'u olusturun ve
     // asagidaki durumlarda giris yapilamadigini test edin
     // 1- gecerli username, gecersiz password
@@ -19,7 +18,7 @@ public class C03_NegatifLoginTesti {
 
     @Test
     public void negatifLogin1(){
-
+        QdPage qdPage= new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
         qdPage.ilkLoginLinki.click();
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
