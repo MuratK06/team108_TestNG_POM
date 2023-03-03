@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenen test">
+    <test name="day10_TestNGFramework">
+
+        <classes>
+            <class name="tests.day10_TestNGFramework.C01_Priority"></class>
+        </classes>
+
+    </test>
+</suite>

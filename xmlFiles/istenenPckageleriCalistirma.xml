@@ -3,7 +3,7 @@
 <suite name="Istenen package'leri calistirma">
     <test name="day11 Test">
         <packages>
-            <package name="tests.day11_POM_assertions"></package>
+            <package name="tests.day10_TestNGFramework.C01_Priority"></package>
         </packages>
     </test>
 </suite>
