@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Murat">
+    <test name="day12">
+        <classes>
+            <class name="tests.day11_POM_assertions.C03_NegatifLoginTesti">
+                <methods>
+                    <include name="negatifLogin3"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

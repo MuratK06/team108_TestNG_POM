@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Murat Korkmaz">
+    <test name="cumartesi">
+        <classes>
+            <class name="tests.day12_xmlFiles.ubung2"></class>
+        </classes>
+    </test>
+</suite>

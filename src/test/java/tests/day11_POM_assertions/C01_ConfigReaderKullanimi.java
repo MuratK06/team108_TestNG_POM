@@ -14,6 +14,7 @@ public class C01_ConfigReaderKullanimi {
         // amazon anasayfaya gidelim
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
 
+
         // Test datasi olarak verilen kelime icin arama yapalim
         AmazonPage amazonPage = new AmazonPage();
         amazonPage.aramaKutusu.sendKeys(ConfigReader.getProperty("amazonAranacakKelime")+ Keys.ENTER);
