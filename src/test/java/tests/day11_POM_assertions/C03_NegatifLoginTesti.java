@@ -3,8 +3,8 @@ package tests.day11_POM_assertions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QdPage;
-import utulities.ConfigReader;
-import utulities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class C03_NegatifLoginTesti {
 // qd anasayfaya gidin

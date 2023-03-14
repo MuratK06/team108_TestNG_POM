@@ -5,8 +5,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.ZeroPage;
-import utulities.ConfigReader;
-import utulities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 import java.util.ArrayList;
 import java.util.List;

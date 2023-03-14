@@ -2,8 +2,8 @@ package tests.day12_xmlFiles;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utulities.Driver;
-import utulities.TestBaseRapor;
+import utilities.Driver;
+import utilities.TestBaseRapor;
 
 public class ubung extends TestBaseRapor {
     @Test

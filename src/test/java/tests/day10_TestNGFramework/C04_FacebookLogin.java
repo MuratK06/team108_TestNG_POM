@@ -4,7 +4,8 @@ import com.github.javafaker.Faker;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FacebookPage;
-import utulities.Driver;
+import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C04_FacebookLogin {
 
@@ -23,14 +24,14 @@ public class C04_FacebookLogin {
 
         facebookPage.emailKutusu.sendKeys(("abc"+faker.internet().emailAddress()));
         facebookPage.passwordKutusu.sendKeys(faker.internet().password());
-        utilities.ReusableMethods.bekle(3);
+        ReusableMethods.bekle(3);
         facebookPage.loginButonu.click();
 
         //4- Basarili giris yapilamadigini test edin
 
         Assert.assertTrue(facebookPage.girisYapilamadiYaziElementi.isDisplayed());
 
-        utilities.ReusableMethods.bekle(3);
+        ReusableMethods.bekle(3);
 
         Driver.closeDriver();
     }

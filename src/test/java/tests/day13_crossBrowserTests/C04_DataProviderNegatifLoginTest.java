@@ -4,8 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.QdPage;
-import utulities.ConfigReader;
-import utulities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class C04_DataProviderNegatifLoginTest {
 

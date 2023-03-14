@@ -5,9 +5,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AmazonPage;
-import utulities.ConfigReader;
-import utulities.Driver;
-import utulities.TestBaseRapor;
+import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.TestBaseRapor;
 
 public class ubung3 extends TestBaseRapor {
 

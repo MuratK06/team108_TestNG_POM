@@ -3,9 +3,11 @@ package tests.day12_xmlFiles;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QdPage;
-import utulities.ConfigReader;
-import utulities.Driver;
-import utulities.TestBaseRapor;
+import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.TestBaseRapor;
+
+import static utilities.TestBaseRapor.extentReports;
 
 public class C03_RaporluPozitifLoginTesti extends TestBaseRapor {
 

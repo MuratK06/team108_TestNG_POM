@@ -4,9 +4,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.ZeroPage;
-import utulities.ConfigReader;
-import utulities.Driver;
-import utulities.TestBaseRapor;
+import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
 public class ubung4 extends TestBaseRapor {
 
@@ -32,7 +33,7 @@ public class ubung4 extends TestBaseRapor {
         zeroPage.purchaseFCButonu.click();
         // 8. “Currency” drop down menusunden Eurozone’u secin
         Select select=new Select(zeroPage.currencyDropdown);
-        utilities.ReusableMethods.bekle(2);
+        ReusableMethods.bekle(2);
         select.selectByVisibleText("Eurozone (euro)");
         // 9. soft assert kullanarak "Eurozone (euro)" secildigini test edin
         SoftAssert softAssert=new SoftAssert();

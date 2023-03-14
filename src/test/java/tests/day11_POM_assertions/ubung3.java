@@ -2,8 +2,8 @@ package tests.day11_POM_assertions;
 
 import org.testng.annotations.Test;
 import pages.QdPage;
-import utulities.ConfigReader;
-import utulities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class ubung3 {
 
@@ -16,6 +16,6 @@ public class ubung3 {
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
         qdPage.loginButonu.click();
-
+//ngk
     }
 }

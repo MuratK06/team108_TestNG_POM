@@ -2,7 +2,7 @@ package tests.day12_xmlFiles;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import utulities.Driver;
+import utilities.Driver;
 
 public class C02_ReusableMethodsSwitchingwindows {
 
