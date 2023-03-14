@@ -17,6 +17,8 @@ public class ubung extends TestBaseRapor {
 
         Assert.assertTrue(actualurl.contains(expectedIcerik));
         extentTest.pass("basarili sekilde giris yapildigi test edildi");
+
+        //kfk
     }
 
 }
